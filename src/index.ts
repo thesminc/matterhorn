@@ -24,4 +24,4 @@ const start = async () => {
   }
 }
 // testing
-//start()
+start()

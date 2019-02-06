@@ -14,7 +14,7 @@
     "install:ci": "npm ci",
     "lint": "eslint 'src/**/*.ts'",
     "start": "node lib/index.js",
-    "start:watch": "nodemon lib/index.js --log",
+    "start:watch": "nodemon --inspect=0.0.0.0:9229 lib/index.js",
     "test": "jest --config jest.config.json",
     "test:ci": "npm run test -- --ci --reporters=jest-junit --coverage --coverageReporters=html --coverageReporters=json --coverageReporters=cobertura"
   },
